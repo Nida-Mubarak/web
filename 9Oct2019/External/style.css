@@ -1,0 +1,35 @@
+body{
+	background: Gainsboro  ;
+ 
+}
+h1{
+	text-align: center; 
+	color: white;
+	background: rgb(84, 102, 223);
+	
+
+}
+img{
+	height: 400px;
+	width:500px;
+	margin: 0 auto;
+	display: block;
+}
+p{
+	text-decoration-style: italic;
+
+}
+h2{
+	background: rgb(84, 102, 223);
+	 color: white;
+
+
+}
+h4{
+
+}
+pre{
+	font-size: 15px;
+
+	
+}
