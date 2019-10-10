@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript</title>
+</head>
+<body>
+	<h2>Image Maps</h2>
+<p>Click on the cup of coffee to execute a JavaScript function:</p>
+
+<img src="laptop-and-coffee.jpg" alt="Workplace" usemap="#workmap" >
+
+<map name="workmap">
+  <area shape="circle" coords="485,297,42" onclick="myFunction()">
+</map>
+
+<script>
+function myFunction() {
+  alert("Do you want some coffee?");
+  // alert("Do you want the coffee?");
+}
+</script>
+</body>
+</html>
