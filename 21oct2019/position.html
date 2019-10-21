@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Position</title>
+	<style type="text/css">
+	
+	.container{
+		position: absolute;
+		height:768px;
+		width: 1024px; 
+	}
+
+		img{
+			z-index: -1;
+			opacity: 0.75;
+		}
+		div{
+			color: white;
+			font-size: 30px;
+		}
+		
+		.topleft{
+			position: absolute;
+			top: 0px;
+			left: 10px;	
+		}
+		.topright{
+			position: absolute;
+			top: 0px;
+			right: 10px;
+		}
+		.bottomleft{
+			position: absolute;
+			bottom: 0px;
+			left: 10px;
+		}
+		.bottomright{
+			position: absolute;
+			bottom: 0px;
+			right: 10px;
+		}
+		.center{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 100%;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="pathway.jpg">
+		<div class="topleft">Top Left</div>
+		<div class="topright">Top Right</div>
+		<div class="bottomleft">Bottom Left</div>
+		<div class="bottomright">Bottom Right</div>
+		<div class="center">Center</div>
+	</div>
+</body>
+</html>
