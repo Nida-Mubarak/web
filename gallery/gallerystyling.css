@@ -1,0 +1,13 @@
+div.box{
+	  margin: 10px;
+	  float: left;
+	  width: 300px;
+}
+.box img:hover{
+	opacity: 0.6;
+}
+div.box img{
+	border-radius: 5%;
+	height:200px;
+	width:100%;
+}
