@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forms</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		h1{
+			text-align: center;
+		}
+		input[type=text],select,textarea{
+			width: 100%;
+			padding: 12px;
+			border: 1px solid green;
+			resize: vertical;
+			border-radius: 4px;
+			/*background-color: lightgrey;*/
+		}
+		input[type=text],select,textarea:focus{
+			border:1px solid red;
+			
+		}
+		label{
+			padding: 12px 12px 12px 0;
+			display: inline-block;
+		}
+		button[type=button]{
+			background-color: indigo;
+			color:white;
+			padding: 12px 20px;
+			text-align: center;
+			border-radius: 10px;
+			border: none;
+			float: right;
+			width: 20%;
+			margin-top: 20px;
+		}
+		button[type=button]:hover{
+			background: red;
+		}
+		.container{
+			border-radius: 5px;
+			background-color: #ddd;
+			padding: 20px;
+			width: 60%;
+			margin:auto;
+		}
+		.col-25{
+			float: left;
+			width: 25%;
+			margin-top: 6px; 
+		}
+		.col-75{
+			float: left;
+			width: 75%;
+			margin-top: 6px;
+
+		}
+		.row:after{
+			content: "";
+			display: table;
+			clear: both;
+
+		}
+		@media screen and (max-width: 600px){
+			.col-25,.col-75,input[type=button]{
+				width: 100%;
+				margin-top: 0;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Responsive Form</h1>
+<div class="container">
+	<form method="GET">
+	<div class="row">
+		<div class="col-25">
+			<label for="fname">First Name</label>
+		</div>
+		<div class="col-75">
+			<input type="text" id="lname" name="flastname" placeholder="Type Your Last Name">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-25">
+			<label for="lname">Last Name</label>
+		</div>
+		<div class="col-75" >
+			<input type="text" id="lname" name="flastname" placeholder="Type Your Last Name">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-25">
+			<label for="country">Country</label>
+		</div>
+		<div class="col-75">
+			<select id="country" name="country">
+				<option value="pakistan">Pakistan</option>
+				<option value="autralia">Australia</option>
+				<option value="canada">Canada</option>
+				<option value="usa">USA</option>
+			</select>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-25">
+			<label for="subject">Subject</label>
+		</div>
+		<div class="col-75" >
+			<textarea id="subject" name="firstname" placeholder="Write Something" style="height: 200px"></textarea>
+		</div>
+	</div>
+	<div class="row">
+		<button type="button" name="submit">Submit</button>
+	</div>
+		
+	</form>
+</div>	
+</body>
+</html>
