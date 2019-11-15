@@ -1,0 +1,302 @@
+/* Define custom fonts */
+@font-face
+{
+    font-family: 'font1';
+    src: url('fonts/font1.eot');
+    src: url('fonts/font1.eot?#iefix') format('embedded-opentype'),
+         url('fonts/font1.woff') format('woff'),
+         url('fonts/font1.ttf') format('truetype'),
+         url('fonts/font1.svg#font1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('fonts/dayrom.eot');
+    src: url('fonts/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dayrom.woff') format('woff'),
+         url('fonts/dayrom.ttf') format('truetype'),
+         url('fonts/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: 'Merienda-Bold';
+    src: url('fonts/Merienda-Bold.eot');
+    src: url('fonts/Merienda-Bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Merienda-Bold.woff') format('woff'),
+         url('fonts/Merienda-Bold.ttf') format('truetype'),
+         url('fonts/Merienda-Bold.svg#Merienda-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: 'GildaDisplay-Regular';
+    src: url('fonts/GildaDisplay-Regular.eot');
+    src: url('fonts/GildaDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/GildaDisplay-Regular.woff') format('woff'),
+         url('fonts/GildaDisplay-Regular.ttf') format('truetype'),
+         url('fonts/GildaDisplay-Regular.svg#GildaDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Main elements of the body */
+body{
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	font-family:"Trebuchet MS" , Arial, sans-serif; 
+}
+#main_wrapper{
+	width: 900px;
+	margin: auto;
+}
+section h1, footer h1, nav a
+{
+    font-family: Merienda-Bold, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Header */
+
+header{
+	box-shadow: 0px 2px 5px #f1c889;
+	border-radius: 4px;
+}
+#main_title{
+	display: inline-block;
+}
+header h1{
+	font-family: 'font1', serif;
+	font-size: 2.5em;
+	font-weight: normal;
+}
+#logo, header h1{
+	display: inline-block;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	margin-top: 5px;
+	text-shadow: 0px 2px 3px #f1c889;
+}
+header h2{
+	font-family: GildaDisplay-Regular, serif;
+	font-size:1.1em;
+	margin-top: 0px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+/* Navigation */
+
+nav
+{
+    display: inline-block;
+    width: 740px;
+    text-align: right;
+    position: sticky;
+    top: 0;
+}
+
+nav ul
+{
+    list-style-type: none;
+}
+
+nav li
+{
+    display: inline-block;
+    margin-right: 15px;
+   
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: white;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #fae698;
+    border-bottom: 3px solid #fae698;
+    border-top:1px solid #fae698; 
+}
+
+/* Banner */
+
+#banner_image{
+	margin-top: 15px;
+	height: 200px;
+	border-radius: 5px;
+	background: url('images/cappadocia-turkey.jpg') no-repeat center;
+	background-size: 100% ;
+	position: relative;
+	box-shadow: 2px 2px 5px #f1c889;
+	margin-bottom: 25px;
+
+}
+#banner_description{
+	position: absolute;
+	bottom: 0;
+	border-radius: 0px 0px 5px 5px;
+	width: 99.5%;
+	height: 33px;
+	padding-top: 15px;
+	padding-left: 4px;
+	background-color: rgba(24,24,24,0.8);
+	color: white;
+	font-size: 0.8em;
+}
+.red_button{
+	display: inline-block;
+	height: 25px;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	background: url('images/red_background.png') repeat-x;
+	border:1px solid #760001;
+	border-radius: 5px;
+	font-size: 1.2em;
+	text-align: center;
+	padding: 3px 8px 0px 8px;
+	color: white;
+	text-decoration: none;
+}
+.red_button img{
+	border:0;
+}
+
+/* Body */
+
+article, aside{
+	display: inline-block;
+	text-align: justify;
+	vertical-align: top;
+}
+article{
+	width: 615px;
+	margin-right: 15px;
+	padding: 5px;
+	border-radius: 5px;
+}
+.cat_icon{
+	vertical-align: middle;
+	margin-right: 8px;
+}
+article p{
+	font-size: 0.8em;
+}
+article img{
+	height: 113px;
+	width: 190px;
+	margin-left: 10px;
+}
+article .column{
+	width: 180px;
+	display: inline-block;
+	margin-left: 15px;
+}
+article h3{
+	font-family:GildaDisplay-Regular; 
+}
+aside{
+	position: relative;
+	width: 235px;
+	background-color: #706b64;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 0.9em;
+}
+#arrow{
+	position: absolute;
+	top: 100px;
+	left: -12px;
+}
+#my_picture{
+	text-align: center;
+}
+#my_picture img{
+	border:1px solid #181818;
+}
+aside img{
+	margin-right: 5px;
+}
+
+/* Footer */
+
+footer
+{
+    background:  url('images/top.png') no-repeat top center, url('images/line.png') repeat-x top; /*url('images/shadow.png') repeat-x top;*/
+    padding-top: 25px;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px #f1c889;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+#tweet, #my_pictures, #my_friends
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#tweet
+{
+    width: 27%;
+    margin-left: 5px;
+}
+
+#my_pictures
+{
+    width: 35%;
+}
+
+#my_friends
+{
+    width: 31%;
+}
+
+#my_pictures img
+{
+    border: 1px solid #181818;
+    margin-right: -2px;
+    
+}
+
+#my_friends ul
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    width: 48%;
+    list-style-image: url('images/external_link.png');
+    padding-left: 2px;
+}
+
+#my_friends a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+ #copyright{
+	text-align: center;
+	padding: 10px;
+}
+
+
