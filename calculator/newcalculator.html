@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="main">
+		<form name="forms">
+			<input id="result"  type="text" name="display" disabled=""> <br>
+			<input class="button" type="button" value="1" onclick="forms.display.value +='1' " >
+			<input class="button" type="button" value="2" onclick="forms.display.value +='2' " >
+			<input class="button" type="button" value="3" onclick="forms.display.value +='3' " >
+			<input class="button" type="button" value="+" onclick="forms.display.value +='+' " >
+			<br>
+
+			<input class="button" type="button" value="4" onclick="forms.display.value +='4' " >
+			<input class="button" type="button" value="5" onclick="forms.display.value +='5' " >
+			<input class="button" type="button" value="6" onclick="forms.display.value +='6' " >
+			<input class="button" type="button" value="-" onclick="forms.display.value +='-' " >
+			<br>
+
+			<input class="button" type="button" value="7" onclick="forms.display.value +='7' " >
+			<input class="button" type="button" value="8" onclick="forms.display.value +='8' " >
+			<input class="button" type="button" value="9" onclick="forms.display.value +='9' " >
+			<input class="button" type="button" value="*" onclick="forms.display.value +='*' " >
+			<br>
+
+			<input class="button" type="button" value="/" onclick="forms.display.value +='/' " >
+			<input class="button" type="button" value="0" onclick="forms.display.value +='0' " >
+			<input class="button" type="button" value="=" onclick="solution('solve()')" >
+
+			<input class="button" type="reset" value="AC" onclick="forms.display.value='reset' ">
+			<br>
+			<input id="delete" class="button" type="button"  value="&#8592" onclick="backspace()">
+		
+
+
+	</form>
+	</div>
+	<script type="text/javascript" src="functions.js"></script>
+</body>
+</html>

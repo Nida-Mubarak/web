@@ -1,0 +1,49 @@
+html {
+  background: #6c7dc5;
+  background-image:
+    radial-gradient(60% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
+    radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+  background-attachment: fixed;
+  color: #6cacc5;
+}
+body {
+  color: #6cacc5;
+  font: 12px "Source Sans Pro",sans-serif;
+  margin: 0;
+  padding: 5em 0 2em;
+  text-align: center;
+}
+.main {
+  font-size: 28px;
+  margin: 0 auto;
+  width: 10em;
+}
+input[type=text] {
+  
+  background: rgba(42,50,113, .28);
+  	color: #6cacc5;
+  text-overflow: ellipsis;
+  border: 2px solid #6c7dc5;
+  overflow: hidden;
+  font: inherit;	
+  width: 9.35em;
+  height: 2em;
+  margin-bottom: 10px;
+}
+.button {
+  border: 0;
+  background: rgba(42,50,113, .28);
+  color: #6cacc5;
+  cursor: pointer;
+  float: left;
+  font: inherit;
+  margin: 0.25em;
+  width: 2em;
+  height: 2em;
+  }
+  #delete{
+  	font: inherit;
+  margin: 0.25em;
+  width: 9.5em;
+  height: 2em;
+  }
